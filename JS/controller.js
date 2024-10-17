@@ -8,3 +8,8 @@ window.onscroll = function() {
         navbar.classList.remove('scrolled');
     }
 };
+
+
+function toggleParagraph(){
+    document.getElementById('para1').classList.toggle('hidden')
+}

@@ -96,6 +96,8 @@ video {
     font-size: 1em;
     color: black;
     font-weight: 630;
+    user-select: none;
+    cursor: pointer;
 }
 
 .image-section img {
@@ -106,4 +108,9 @@ video {
 
 .slideshow img{
     width: 30vw;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 0.3s;
 }
