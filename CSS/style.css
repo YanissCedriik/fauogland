@@ -185,7 +185,8 @@ video {
 }
 
 .main-section button:hover{
-    opacity: .8;
+    color: goldenrod;
+    transition: color 0.3s;
 }
 
 button img{
