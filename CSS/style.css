@@ -11,13 +11,14 @@ nav {
     position: sticky;
     top: 0;
     transition: background-color 1s;
-    z-index: 1000; /* Keep the navbar on top */
+    z-index: 1000;
 }
 
 nav img {
     position: absolute;
     height: 8vh; 
-    left: 12%;
+    left: 6%;
+    filter: invert(0);
 }
 
 nav button {
@@ -26,25 +27,37 @@ nav button {
     border: none;
     font-size: 1.4em;
     margin-right: 1.4rem;
+    filter: invert(0);
 }
 
 nav button:hover {
-    scale: 110%;
+    color: goldenrod;
     transition: all 0.3s;
 }
 
 .scrolled {
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: rgb(255, 255, 255);
 }
 
 .introSection {
-    position: relative;
-    height: 100vh; 
+    height: calc(100vh - 8vh);
     overflow: hidden; 
+    margin-top: 8vh;
+}
+
+.introSection img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 45%; 
+    height: auto; 
+    z-index: 10; 
+    filter: invert(0);
 }
 
 video {
-    position: fixed; 
+    position: absolute; 
     left: 0; 
     top: 0;
     width: 100%;
@@ -53,18 +66,44 @@ video {
     z-index: -1; 
 }
 
-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 50%; 
-    height: auto; 
-    z-index: 10; 
-}
 
 .content {
-    position: relative;
-    z-index: 1; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: left; 
     padding: 20px; 
+}
+
+.text-section {
+    flex: 1; 
+    padding-right: 20px; 
+    padding: 30px; 
+}
+
+.text-section h1 {
+    font-size: 2.5em; 
+    color: #2c3e50; 
+    margin-bottom: 15px; 
+}
+
+.text-section p {
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    color: #34495e; 
+}
+
+.text-section span {
+    font-size: 1em;
+    color: black;
+    font-weight: 630;
+}
+
+.image-section img {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 80vh; 
+}
+
+.slideshow img{
+    width: 30vw;
 }
