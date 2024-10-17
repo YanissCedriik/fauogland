@@ -10,6 +10,8 @@ window.onscroll = function() {
 };
 
 
-function toggleParagraph(){
-    document.getElementById('para1').classList.toggle('hidden')
+function toggleParagraph() {
+    const paragraph = document.getElementById('para1');
+    paragraph.classList.toggle('hidden');
+    paragraph.classList.toggle('visible');
 }

@@ -67,11 +67,25 @@ video {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .content {
     display: flex; 
     justify-content: space-between;
     align-items: left; 
-    padding: 20px; 
+    padding: 6rem; 
 }
 
 .text-section {
@@ -106,11 +120,75 @@ video {
     max-height: 80vh; 
 }
 
-.slideshow img{
-    width: 30vw;
+.visible {
+    max-height: 200px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
 }
 
-.hidden{
+.hidden {
+    max-height: 0;
     opacity: 0;
-    transition: all 0.3s;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.main-section {
+    padding: 6rem;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image-container {
+    flex: 1; 
+}
+
+.image-container img {
+    max-width: 85%; 
+    height: auto;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 24px; 
+}
+
+.main-section button {
+    cursor: pointer;
+    margin-bottom: 2rem;
+    width: 12vw;
+    height: 4vh;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    background-color: transparent;
+    
+    text-align: left;
+    font-size: 1.4em;
+}
+
+.main-section button:hover{
+    opacity: .8;
+}
+
+button img{
+    position: absolute;
+    right: 7rem;
 }
