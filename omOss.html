@@ -16,7 +16,14 @@
             <button><a href="index.html">Hjem</a></button>
             <button><a href="omOss.html">Om Oss</a></button>
             <button><a href="prosjekter.html">Prosjekter</a></button>
-            <button><a href="utforsk.html">Utforsk</a></button>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="utforsk.html">Utforsk</a></button>
+                <div class="dropdown-content">
+                    <a href="#">Film</a>
+                    <a href="#">Reklame</a>
+                    <a href="#">Innhold</a>
+                    <a href="#">Musikkvideo</a>
+                </div>
         </div>
     </nav>
 
@@ -52,19 +59,19 @@
             <div class="contact-container">
                 <div class="company-name-input">
                     <div>Selskap</div>
-                    <input type="text">
+                    <input type="text" placeholder="Company" autocomplete="organization-title">
                 </div>
                 <div class="name-sirname-input">
                     <div>Navn <span>(påkrevd)</span></div>
-                    <input type="name">
+                    <input type="name" placeholder="John" autocomplete="name">
 
                     <div>Etternavn</div>
-                    <input type="text">
+                    <input type="text" placeholder="Doe" autocomplete="additional-name">
                 </div>
 
                 <div class="email-input">
                     <div>Email <span>(påkrevd)</span></div>
-                    <input type="email">
+                    <input type="email" placeholder="john.doe@example.com" autocomplete="email">
 
                     <input type="radio" unchecked> <span>Meld deg på vårt nyhetsbrev!</span>
                 </div>
