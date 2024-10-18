@@ -157,7 +157,7 @@ video {
 }
 
 .image-container img {
-    max-width: 85%; 
+    max-width: 80%; 
     height: auto;
 }
 
@@ -192,4 +192,98 @@ video {
 button img{
     position: absolute;
     right: 7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.people-section {
+    padding: 6rem;
+    text-align: center;
+}
+
+.people-section h1 {
+    font-size: 2.5em; 
+    color: #2c3e50; 
+    margin-bottom: 15px; 
+}
+
+.people-section h2 {
+    font-size: 2em; 
+    color: #2c3e50; 
+    margin-bottom: 1.5rem; 
+}
+
+.person-CEO {
+    margin-bottom: 8rem;
+}
+
+.person-CEO img {
+    width: 30vw; 
+    height: auto;
+    border-radius: 50%;
+    filter:grayscale(1);
+}
+
+.contact-information img{
+    border-radius: 0;
+    width: 14px;
+}
+
+.contact-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.contact-information img {
+    margin-right: 0.5rem;
+}
+
+.contact-information span {
+    color: #34495e;
+    font-size: 0.9em;
+}
+
+
+
+.freelance-network {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 2rem; 
+}
+
+.person {
+    text-align: center;
+}
+
+.person img {
+    margin-top: 4rem;
+    max-width: 100%;
+    max-height: 50vh;
+    border-radius: 50%;
+    filter:grayscale(1);
+}
+
+.person-name {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.person-job {
+    color: #34495e; 
+    font-size: 0.9em;
 }
