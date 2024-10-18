@@ -136,7 +136,7 @@ video {
     display: flex; 
     justify-content: space-between;
     align-items: left; 
-    padding: 6rem; 
+    padding: 6rem;
 }
 
 .text-section {
@@ -201,6 +201,7 @@ video {
     align-items: flex-start;
     padding: 6rem;
     margin-top: 10vh;
+    background-color: #D4AF37;
 }
 
 .image-container {
@@ -404,6 +405,7 @@ button img{
     flex-direction: row; 
     align-items: center;
     padding: 4rem; 
+    background-color: #D4AF37;
 }
 
 .contact-us img {
@@ -443,6 +445,7 @@ button img{
     border: 1px solid #ccc; 
     border-radius: 4px; 
     font-size: 1em; 
+    background-color: white;
 }
 
 .contact-container input[type="radio"] {
